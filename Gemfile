@@ -31,7 +31,9 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "bootsnap", require: false
 gem 'fast_jsonapi'
 gem 'active_model_serializers', '~> 0.10.0'
-
+gem 'jsom-pagination'
+gem 'jsonapi_errors_handler'
+gem "octokit", "~> 5.0"
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
