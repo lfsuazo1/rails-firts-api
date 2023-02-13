@@ -1,4 +1,6 @@
-module Paginable  
+# frozen_string_literal: true
+
+module Paginable
   extend ActiveSupport::Concern
   def paginate(collection)
     paginator.call(
@@ -22,7 +24,7 @@ module Paginable
         meta: paginated.meta.to_h,
         links: paginated.links.to_h
       }
-      result = serializer.new(paginated.items, options)
+    result = serializer.new(paginated.items, options)
     render json: result, status: :ok
   end
 end
